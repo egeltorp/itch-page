@@ -1,0 +1,49 @@
+.profile_column,
+.user_profile_page .inner_column {
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column; /* <-- this stacks children vertically */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px auto;
+  padding-top: 0;
+  text-align: center;
+}
+
+.column,
+.profile_column,
+.user_profile_page .inner_column a {
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: #cfcfcf;
+}
+
+.profile_column a:hover {
+  transform: scale(1.03);
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.link_group {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.game_thumb {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.game_thumb:hover {
+  transform: scale(0.98);
+}
+
+.game_platform {
+  display: none;
+}
+
+.game_genre {
+  display: none;
+}
