@@ -34,10 +34,11 @@
 .game_thumb {
   display: inline-block;
   overflow: hidden;
+  transition: transform 0.15s ease;
 }
 
 .game_thumb:hover {
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 .game_platform {
