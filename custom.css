@@ -1,57 +1,95 @@
+/* PROFILE COLUMN LAYOUT */
 .profile_column,
 .user_profile_page .inner_column {
-  padding: 10px;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 10px auto;
-  padding-top: 0;
-  text-align: center;
+	padding: 10px;
+	padding-top: 0;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto 10px auto;
+	text-align: center;
 }
 
+/* LINK APPEARANCE + TRANSITIONS */
 .column,
 .profile_column,
 .user_profile_page .inner_column a {
-  transition: all 0.2s ease;
-  text-decoration: none;
-  color: #cfcfcf;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	color: #cfcfcf;
 }
 
+/* LINK HOVER EFFECTS */
 .profile_column a:hover {
-  transform: scale(1.03);
-  color: #fff;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	transform: scale(1.03);
+	color: #fff;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+/* SMALL SPACING GROUP */
 .link_group {
-  padding-left: 10px;
-  padding-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-
-.game_thumb {
-  display: inline-block;
-  overflow: hidden;
-  transition: transform 0.15s ease;
+/* EXTRA BOTTOM SPACE FOR INNER COLUMN */
+.inner_column {
+	padding-bottom: 6rem;
 }
 
-.game_thumb:hover {
-  transform: scale(0.97);
+/* GAME CELL BASE STYLE */
+.game_cell {
+	display: inline-block;
+	overflow: hidden;
+	transition: transform 0.15s ease;
 }
 
+/* GAME CELL HOVER DEFAULT (SCALE UP) */
+.game_cell:hover {
+	transform: scale(1.04);
+}
+
+/* GAME CELL HOVER IN COLLECTION ROW (SCALE DOWN) */
+.collection_row .game_cell:hover {
+	transform: scale(0.97);
+}
+
+/* THUMBNAILS IN COLLECTION ROW DESATURATED */
+.collection_row .game_thumb img {
+	filter: grayscale(80%) contrast(0.9);
+	transition: filter 0.3s ease;
+}
+
+/* FULL COLOR ON HOVER */
+.collection_row .game_thumb:hover img {
+	filter: none;
+}
+
+/* HIDE PLATFORM + GENRE */
 .game_platform {
-  display: none;
+	display: none;
 }
 
 .game_genre {
-  display: none;
+	display: none;
 }
 
+/* TITLE HOVER SCALE */
+.title.game_link {
+	display: inline-block;
+	transition: transform 0.15s ease;
+}
+
+.title.game_link:hover {
+	transform: scale(1.05);
+}
+
+/* USER LINKS WIDGET CENTERING */
 .user_links .user_links_widget .base_widget {
-display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
